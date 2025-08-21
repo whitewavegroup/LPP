@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taller Completo — De la pobreza al propósito</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="wrap">
+    <a href="index.html" class="brand">libres<span>para</span>prosperar<span>.com</span></a>
+    <nav class="nav" id="nav">
+      <a href="talleres.html">← Volver a Talleres</a>
+      <a href="privacidad.html">Privacidad</a>
+    </nav>
+    <button id="menuBtn" class="menu" aria-label="Abrir menú">☰</button>
+  </div>
+</header>
+
+<main class="section">
+  <div class="wrap">
+    <h1>De la pobreza al propósito: Invitando el Cielo a tus Finanzas como Pareja</h1>
+    <p class="muted">Completen juntos. Sus respuestas se guardan localmente. Al final pueden descargar un PDF y enviarlo por email.</p>
+
+    <div class="card">
+      <h2>Datos de la pareja</h2>
+      <div class="grid2">
+        <div class="field"><label>Nombre(s)</label><input id="p_nombre" type="text"></div>
+        <div class="field"><label>Ciudad</label><input id="p_ciudad" type="text"></div>
+        <div class="field"><label>Teléfono</label><input id="p_tel" type="tel"></div>
+        <div class="field"><label>Email</label><input id="p_email" type="email"></div>
+      </div>
+    </div>
+
+    <div class="card"><h2>1) Bienvenida e Introducción</h2><div class="field"><label>¿Qué emociones aparecen cuando hablan de dinero?</label><textarea id="q1" rows="3"></textarea></div></div>
+
+    <div class="card"><h2>2) Fundamento de las Finanzas del Reino</h2>
+      <div class="verse">Filipenses 4:19 — “Mi Dios, pues, suplirá todo lo que os falta conforme a sus riquezas en gloria en Cristo Jesús.”</div>
+      <div class="verse">Proverbios 21:5 — “Los pensamientos del diligente ciertamente tienden a la abundancia; mas todo el que se apresura alocadamente, de cierto va a la pobreza.”</div>
+      <div class="verse">Lucas 14:28 — “Porque ¿quién de vosotros, queriendo edificar una torre, no se sienta primero y calcula los gastos, a ver si tiene lo que necesita para acabarla?”</div>
+      <div class="field"><label>Impacto de nuestros hábitos en la paz/tensión:</label><textarea id="q2" rows="3"></textarea></div>
+      <div class="field"><label>Decisiones desde planificación (no urgencia):</label><textarea id="q3" rows="3"></textarea></div>
+    </div>
+
+    <div class="card"><h2>3) Economía del Cielo y Sabiduría</h2>
+      <div class="verse">Deuteronomio 8:18 — “Acuérdate de Jehová tu Dios, porque él te da el poder para hacer las riquezas…”</div>
+      <div class="verse">Isaías 45:3 — “Te daré los tesoros escondidos, y los secretos muy guardados…”</div>
+      <div class="verse">Santiago 1:5 — “Y si alguno de vosotros tiene falta de sabiduría, pídala a Dios…”</div>
+      <div class="field"><label>Dinero como llave para propósitos: ¿qué cambiaría?</label><textarea id="q4" rows="3"></textarea></div>
+      <div class="field"><label>Idea/sabiduría para multiplicar: impacto en familia/otros</label><textarea id="q5" rows="3"></textarea></div>
+    </div>
+
+    <div class="card"><h2>4) Identidad: De la Pobreza a la Abundancia</h2>
+      <div class="verse">Romanos 8:16–17 — “El Espíritu mismo da testimonio… herederos de Dios y coherederos con Cristo…”</div>
+      <div class="verse">2 Corintios 9:8 — “Y poderoso es Dios para hacer que abunde en vosotros toda gracia…”</div>
+      <div class="verse">Juan 10:10 — “Yo he venido para que tengan vida, y para que la tengan en abundancia.”</div>
+      <div class="field"><label>¿Cómo cambian mis decisiones si vivo como heredero?</label><textarea id="q6" rows="3"></textarea></div>
+      <div class="field"><label>Áreas diarias a ajustar por identidad de abundancia</label><textarea id="q7" rows="3"></textarea></div>
+    </div>
+
+    <div class="card"><h2>5) Aplicaciones Prácticas</h2>
+      <h3>La Regla del 72</h3>
+      <div class="verse">Proverbios 21:20 — “Tesoro precioso y aceite hay en la casa del sabio…”</div>
+      <div class="field"><label>¿Cómo hacer que el interés trabaje a favor?</label><textarea id="q8" rows="3"></textarea></div>
+      <h3>Seguro de Vida</h3>
+      <div class="verse">1 Timoteo 5:8 — “Si alguno no provee para los suyos…”</div>
+      <div class="field"><label>¿Qué protección necesitamos evaluar?</label><textarea id="q9" rows="3"></textarea></div>
+      <h3>Generosidad</h3>
+      <div class="verse">2 Corintios 9:6–7 — “Dios ama al dador alegre.”</div>
+      <div class="field"><label>Prácticas de dar/ahorrar/sembrar que adoptaremos</label><textarea id="q10" rows="3"></textarea></div>
+    </div>
+
+    <div class="card"><h2>6) Oración & Declaración</h2>
+      <div class="field"><label>Nuestra declaración personal</label><textarea id="q11" rows="3"></textarea></div>
+    </div>
+
+    <div class="card"><h2>7) Cierre y Acción</h2>
+      <div class="verse">Efesios 3:20 — “A Aquel que es poderoso para hacer más abundantemente…”</div>
+      <div class="field"><label>Paso pequeño (esta semana) y meta (1 año)</label><textarea id="q12" rows="3"></textarea></div>
+    </div>
+
+    <div class="card">
+      <h2>Exportar y Enviar</h2>
+      <div class="actions">
+        <button class="btn" id="save">💾 Guardar</button>
+        <button class="btn" id="clear">🧹 Limpiar</button>
+        <button class="btn" id="pdf">📄 Descargar PDF</button>
+        <button class="btn secondary" id="emailBtn">✉️ Enviármelo por email</button>
+      </div>
+      <hr class="sep">
+      <p class="muted">Las respuestas se guardan en este navegador (localStorage). El email abre tu cliente de correo con el resumen; adjunta el PDF manualmente.</p>
+    </div>
+
+    <a href="talleres.html" class="btn">← Volver a la página del taller</a>
+  </div>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <small>© 2025 libresparaprosperar.com — <a href="privacidad.html">Política de privacidad</a></small>
+</div></footer>
+
+<script>
+(function(){
+  const fields = ["p_nombre","p_ciudad","p_tel","p_email","q1","q2","q3","q4","q5","q6","q7","q8","q9","q10","q11","q12"];
+  const KEY = "lpp_taller_respuestas_fixbtn";
+
+  function load(){
+    try{ const data = JSON.parse(localStorage.getItem(KEY)||"{}");
+      fields.forEach(id => { if(data[id]!==undefined) document.getElementById(id).value = data[id]; });
+    }catch(e){}
+  }
+  function collect(){ const o={}; fields.forEach(id=>o[id]=document.getElementById(id).value||""); return o; }
+  function save(){ localStorage.setItem(KEY, JSON.stringify(collect())); alert("✅ Respuestas guardadas."); }
+  function clearAll(){ if(!confirm("¿Seguro?")) return; localStorage.removeItem(KEY); fields.forEach(id=>document.getElementById(id).value=""); }
+  async function makePDF(){
+    const { jsPDF } = window.jspdf; const pdf = new jsPDF({unit:"pt",format:"letter"}); const d=collect();
+    const line=(t,y,s=11,b=false)=>{ pdf.setFont("helvetica", b?"bold":"normal"); pdf.setFontSize(s); const L=pdf.splitTextToSize(t,540); pdf.text(L,36,y); return y+L.length*(s+4); }
+    let y=48; y=line("De la pobreza al propósito — Respuestas",y,16,true);
+    y=line(`Pareja: ${d.p_nombre||"-"} | Ciudad: ${d.p_ciudad||"-"}`,y);
+    y=line(`Tel: ${d.p_tel||"-"} | Email: ${d.p_email||"-"}`,y); y+=6;
+    const sections=[["1) Emociones",d.q1],["2) Hábitos",d.q2],["2b) Planificación",d.q3],["3) Propósitos",d.q4],["3b) Idea",d.q5],["4) Herederos",d.q6],["4b) Ajustes",d.q7],["5) Regla 72",d.q8],["5b) Seguro vida",d.q9],["5c) Generosidad",d.q10],["6) Declaración",d.q11],["7) Paso + meta",d.q12]];
+    sections.forEach(([t,v])=>{ if(y>730){pdf.addPage(); y=48;} y=line(t,y+10,12,true); y=line(v||"-",y+2); });
+    pdf.save("Taller_LibresParaProsperar.pdf");
+  }
+  function emailSelf(){
+    const d=collect();
+    const subject=encodeURIComponent("Mis respuestas — Taller Libres Para Prosperar");
+    const body=encodeURIComponent(
+`Pareja: ${d.p_nombre||"-"} | Ciudad: ${d.p_ciudad||"-"}
+Tel: ${d.p_tel||"-"} | Email: ${d.p_email||"-"}
+
+1) Emociones: ${d.q1||"-"}
+2) Hábitos: ${d.q2||"-"}
+2b) Planificación: ${d.q3||"-"}
+3) Propósitos: ${d.q4||"-"}
+3b) Idea: ${d.q5||"-"}
+4) Herederos: ${d.q6||"-"}
+4b) Ajustes: ${d.q7||"-"}
+5) Regla 72: ${d.q8||"-"}
+5b) Seguro vida: ${d.q9||"-"}
+5c) Generosidad: ${d.q10||"-"}
+6) Declaración: ${d.q11||"-"}
+7) Paso + meta: ${d.q12||"-"}
+
+(Adjunta el PDF descargado desde la página).`);
+    const to=encodeURIComponent(d.p_email||"");
+    window.location.href=`mailto:${to}?subject=${subject}&body=${body}`;
+  }
+  document.getElementById("save").addEventListener("click",save);
+  document.getElementById("clear").addEventListener("click",clearAll);
+  document.getElementById("pdf").addEventListener("click",makePDF);
+  document.getElementById("emailBtn").addEventListener("click",emailSelf);
+  load();
+})();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
