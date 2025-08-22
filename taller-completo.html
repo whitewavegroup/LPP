@@ -7,109 +7,84 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
-  <header>
-    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px;">
-      <a href="index.html" class="brand">libresparaprosperar.com</a>
-      <nav class="h-list">
-        <a href="talleres.html">← Volver a Talleres</a>
-        <a href="privacidad.html">Privacidad</a>
-      </nav>
-    </div>
-  </header>
-  <main class="section">
-    <div class="wrap">
-      <h1>De la Escasez al Propósito: Invitando el Cielo a tus Finanzas como Pareja</h1>
-      <p class="muted">Completen juntos. Sus respuestas se guardan localmente. Al final pueden descargar un PDF y enviarlo por email.</p>
-
-      <div class="card">
-        <h2>Datos de la pareja</h2>
-        <div class="grid2">
-          <div><label>Nombre(s)</label><input id="p_nombre" type="text"></div>
-          <div><label>Ciudad</label><input id="p_ciudad" type="text"></div>
-          <div><label>Teléfono</label><input id="p_tel" type="tel"></div>
-          <div><label>Email</label><input id="p_email" type="email"></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2>1) Bienvenida e Introducción</h2>
-        <label>Emociones cuando hablan de dinero</label><textarea id="q1"></textarea>
-      </div>
-
-      <div class="card">
-        <h2>2) Fundamento del Reino</h2>
-        <div class="card">
-          <p>Filipenses 4:19 — “Mi Dios, pues, suplirá todo lo que os falta conforme a sus riquezas en gloria en Cristo Jesús.”</p>
-          <p>Proverbios 21:5 — “Los pensamientos del diligente ciertamente tienden a la abundancia; mas todo el que se apresura alocadamente, de cierto va a la pobreza.”</p>
-          <p>Lucas 14:28 — “Porque ¿quién de vosotros, queriendo edificar una torre, no se sienta primero y calcula los gastos, a ver si tiene lo que necesita para acabarla?”</p>
-        </div>
-        <label>Efecto de hábitos en la paz/tensión</label><textarea id="q2"></textarea>
-        <label>Decisiones desde planificación (no urgencia)</label><textarea id="q3"></textarea>
-      </div>
-
-      <div class="card">
-        <h2>3) Economía del Cielo y Sabiduría</h2>
-        <div class="card">
-          <p>Deuteronomio 8:18 — “Acuérdate de Jehová tu Dios, porque él te da el poder para hacer las riquezas…”</p>
-          <p>Isaías 45:3 — “Te daré los tesoros escondidos, y los secretos muy guardados…”</p>
-          <p>Santiago 1:5 — “Y si alguno de vosotros tiene falta de sabiduría, pídala a Dios…”</p>
-        </div>
-        <label>Dinero como llave a propósitos</label><textarea id="q4"></textarea>
-        <label>Idea/sabiduría para multiplicar</label><textarea id="q5"></textarea>
-      </div>
-
-      <div class="card">
-        <h2>4) Identidad: De la Escasez a la Abundancia</h2>
-        <div class="card">
-          <p>Romanos 8:16–17 — “El Espíritu mismo da testimonio… herederos de Dios y coherederos con Cristo…”</p>
-          <p>2 Corintios 9:8 — “Y poderoso es Dios para hacer que abunde en vosotros toda gracia…”</p>
-          <p>Juan 10:10 — “Yo he venido para que tengan vida, y para que la tengan en abundancia.”</p>
-        </div>
-        <label>¿Cómo decido si vivo como heredero?</label><textarea id="q6"></textarea>
-        <label>¿Qué ajustaré en lo diario?</label><textarea id="q7"></textarea>
-      </div>
-
-      <div class="card">
-        <h2>5) Aplicaciones Prácticas</h2>
-        <h3>Regla del 72</h3>
-        <p>Proverbios 21:20 — “Tesoro precioso y aceite hay en la casa del sabio…”</p>
-        <label>Que el interés trabaje a favor</label><textarea id="q8"></textarea>
-        <h3>Seguro de Vida</h3>
-        <p>1 Timoteo 5:8 — “Si alguno no provee para los suyos…”</p>
-        <label>Protección a evaluar</label><textarea id="q9"></textarea>
-        <h3>Generosidad</h3>
-        <p>2 Corintios 9:6–7 — “Dios ama al dador alegre.”</p>
-        <label>Prácticas de dar/ahorrar/sembrar</label><textarea id="q10"></textarea>
-      </div>
-
-      <div class="card">
-        <h2>6) Oración & Declaración</h2>
-        <label>Nuestra declaración</label><textarea id="q11"></textarea>
-      </div>
-
-      <div class="card">
-        <h2>7) Cierre y Acción</h2>
-        <p>Efesios 3:20 — “A Aquel que es poderoso para hacer más abundantemente…”</p>
-        <label>Paso pequeño (esta semana) y meta (1 año)</label><textarea id="q12"></textarea>
-      </div>
-
-      <div class="card">
-        <h2>Exportar y Enviar</h2>
-        <div class="h-list">
-          <button class="btn" id="save">Guardar</button>
-          <button class="btn ghost" id="clear">Limpiar</button>
-        </div>
+<header class="header">
+  <div class="wrap">
+    <a href="index.html" class="brand">libres<span>para</span>prosperar<span>.com</span></a>
+    <nav class="nav" id="nav">
+      <a href="talleres.html">← Volver a Talleres</a>
+      <a href="privacidad.html">Privacidad</a>
+    </nav>
+    <button class="menu" id="menuBtn" aria-label="Abrir menú">☰</button>
+  </div>
+</header>
+<main class="section">
+  <div class="wrap">
+    <h1>De la Escasez al Propósito: Invitando el Cielo a tus Finanzas como Pareja</h1>
+    <p class="muted">Completen juntos. Sus respuestas se guardan localmente. Al final pueden descargar un PDF y enviarlo por email.</p>
+    <div class="card">
+      <h2>Datos de la pareja</h2>
+      <div class="grid3" style="grid-template-columns:repeat(2,1fr)">
+        <div class="field"><label>Nombre(s)</label><input id="p_nombre" type="text"></div>
+        <div class="field"><label>Ciudad</label><input id="p_ciudad" type="text"></div>
+        <div class="field"><label>Teléfono</label><input id="p_tel" type="tel"></div>
+        <div class="field"><label>Email</label><input id="p_email" type="email"></div>
       </div>
     </div>
-  </main>
-
-  <script>
-  (function(){const f=["p_nombre","p_ciudad","p_tel","p_email","q1","q2","q3","q4","q5","q6","q7","q8","q9","q10","q11","q12"];const K="lpp_repo_full";
-  function g(){try{{const d=JSON.parse(localStorage.getItem(K)||"{{}}");f.forEach(id=>{{if(d[id]!==undefined)document.getElementById(id).value=d[id];}})}}catch(e){{}}}
-  function c(){{const o={{}};f.forEach(id=>o[id]=document.getElementById(id).value||"");return o;}}
-  document.getElementById("save").addEventListener("click",()=>localStorage.setItem(K,JSON.stringify(c())));
-  document.getElementById("clear").addEventListener("click",()=>{{localStorage.removeItem(K);f.forEach(id=>document.getElementById(id).value="");}});
-  g();})();
-  </script>
+    <div class="card">
+      <h2>1) Bienvenida e Introducción</h2>
+      <div class="field"><label>Emociones cuando hablan de dinero:</label><textarea id="q1"></textarea></div>
+    </div>
+    <div class="card">
+      <h2>2) Fundamento del Reino</h2>
+      <div class="field"><label>Efecto de hábitos en la paz/tensión:</label><textarea id="q2"></textarea></div>
+      <div class="field"><label>Decisiones desde planificación:</label><textarea id="q3"></textarea></div>
+    </div>
+    <div class="card">
+      <h2>3) Economía del Cielo y Sabiduría</h2>
+      <div class="field"><label>Dinero como llave a propósitos:</label><textarea id="q4"></textarea></div>
+      <div class="field"><label>Idea/sabiduría para multiplicar:</label><textarea id="q5"></textarea></div>
+    </div>
+    <div class="card">
+      <h2>4) Identidad: De la Escasez a la Abundancia</h2>
+      <div class="field"><label>¿Cómo decido si vivo como heredero?</label><textarea id="q6"></textarea></div>
+      <div class="field"><label>¿Qué ajustaré en lo diario?</label><textarea id="q7"></textarea></div>
+    </div>
+    <div class="card">
+      <h2>5) Aplicaciones Prácticas</h2>
+      <div class="field"><label>Regla del 72: ¿cómo hacer que el interés trabaje a favor?</label><textarea id="q8"></textarea></div>
+      <div class="field"><label>Seguro de Vida: ¿qué protección evaluar?</label><textarea id="q9"></textarea></div>
+      <div class="field"><label>Generosidad: prácticas de dar/ahorrar/sembrar</label><textarea id="q10"></textarea></div>
+    </div>
+    <div class="card">
+      <h2>6) Oración & Declaración</h2>
+      <div class="field"><label>Nuestra declaración</label><textarea id="q11"></textarea></div>
+    </div>
+    <div class="card">
+      <h2>7) Cierre y Acción</h2>
+      <div class="field"><label>Paso pequeño (esta semana) y meta (1 año)</label><textarea id="q12"></textarea></div>
+    </div>
+    <div class="card">
+      <h2>Exportar y Enviar</h2>
+      <div class="actions">
+        <button class="btn" id="save">💾 Guardar</button>
+        <button class="btn ghost" id="clear">🧹 Limpiar</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+(function(){
+  const fields=["p_nombre","p_ciudad","p_tel","p_email","q1","q2","q3","q4","q5","q6","q7","q8","q9","q10","q11","q12"];
+  const KEY="lpp_usercsc_workshop_v2";
+  function load(){ try{ const d=JSON.parse(localStorage.getItem(KEY)||"{}"); fields.forEach(id=>{ if(d[id]!==undefined) document.getElementById(id).value=d[id]; }); }catch(e){} }
+  function collect(){ const o={}; fields.forEach(id=>o[id]=document.getElementById(id).value||""); return o; }
+  function save(){ localStorage.setItem(KEY, JSON.stringify(collect())); alert("✅ Guardado."); }
+  function clearAll(){ if(!confirm("¿Seguro?")) return; localStorage.removeItem(KEY); fields.forEach(id=>document.getElementById(id).value=""); }
+  document.getElementById("save").addEventListener("click",save);
+  document.getElementById("clear").addEventListener("click",clearAll);
+  load();
+})();
+</script>
+<script src="script.js"></script>
 </body>
 </html>

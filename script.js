@@ -1,9 +1,5 @@
 (function(){
-  const menuBtn = document.getElementById('menuBtn');
+  const btn = document.getElementById('menuBtn');
   const nav = document.getElementById('nav');
-  if(menuBtn){
-    menuBtn.addEventListener('click', ()=>{
-      nav.style.display = (nav.style.display==='flex' ? 'none' : 'flex');
-    });
-  }
+  if(btn && nav){ btn.addEventListener('click', ()=> nav.classList.toggle('open')); }
 })();

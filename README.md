@@ -1,17 +1,12 @@
-# Libres Para Prosperar — Sitio completo (Landing central)
+# LibresParaProsperar — Repo completo
+- `index.html`: landing original (CTA principal a `lista-espera.html`, "Descubre el Taller" a `talleres.html`).
+- `lista-espera.html`: formulario PipelinePro (HkKK9MwaPAwqPRE7s1G1).
+- `talleres.html`: resumen + botón a `taller-acceso.html`.
+- `taller-acceso.html`: formulario PipelinePro (Hv49mCWtpSgYqiam4Jwy) → redirigir a `/taller-completo.html`.
+- `taller-completo.html`: taller interactivo con guardado local.
+- `privacidad.html`
+- `styles.css`, `script.js`
+- `.htaccess` (Apache/cPanel).
 
-- `index.html` → **Landing principal** (central) con CTA hacia `talleres.html`.
-- `talleres.html` → Taller con formulario **PipelinePro** embebido.
-- `privacidad.html` → Política de Privacidad.
-- `styles.css`, `script.js`, `favicon.svg`, `og-cover.jpg`.
-
-## Deploy (GitHub Pages)
-```bash
-git init
-git add .
-git commit -m "Sitio Libres Para Prosperar (landing central + talleres + privacidad)"
-git branch -M main
-git remote add origin <TU_REPO_URL>
-git push -u origin main
-```
-Luego: Settings → Pages → Deploy from a branch → main → /root.
+## Nota
+Ajusta la **redirección post-submit** del formulario de acceso en PipelinePro a `/taller-completo.html`.
