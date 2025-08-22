@@ -1,15 +1,16 @@
-# Libres Para Prosperar — FUNNEL listo
+# Libres Para Prosperar — Funnel con landing original (sin minutos)
 
 Incluye:
-- `index.html` — Landing restaurado (hero, beneficios, testimonios, CTA). **El botón inferior** lleva a `lista-espera.html`.
-- `lista-espera.html` — Página con el **formulario PipelinePro** de lista de espera (HkKK9MwaPAwqPRE7s1G1).
-- `talleres.html` — Resumen + botón **Entrar al Taller**.
-- `taller-acceso.html` — **Formulario PipelinePro** para gatear el acceso al taller (Hv49mCWtpSgYqiam4Jwy). Configura la redirección a `/taller-completo.html`.
-- `taller-completo.html` — Taller interactivo (inputs bonitos, guardado local, PDF, email).
-- `privacidad.html` — Política de Privacidad.
-- `styles.css`, `script.js`, `.htaccess` (para Apache/cPanel).
+- `index.html` — Landing **original** restaurado (hero, beneficios, testimonios, CTA final → `lista-espera.html`).
+- `lista-espera.html` — Página con formulario PipelinePro (HkKK9MwaPAwqPRE7s1G1).
+- `talleres.html` — Resumen del taller **sin tiempos** + botón Entrar al Taller.
+- `taller-acceso.html` — Formulario de acceso (Hv49mCWtpSgYqiam4Jwy) con redirección a `taller-completo.html`.
+- `taller-completo.html` — Taller completo interactivo (preguntas completas, inputs bonitos, auto‑resize, PDF y email), **sin tiempos** en títulos.
+- `privacidad.html`, `styles.css`, `script.js`, `.htaccess` (para Apache/cPanel).
 
-## Publicación rápida
-1. Sube **todo** el contenido del ZIP a la raíz de tu hosting.
-2. Si usas Apache/cPanel, deja `.htaccess` para forzar `index.html` como página inicial.
-3. En PipelinePro, redirige el formulario de acceso a: `/taller-completo.html`.
+## Publicación
+1. Sube todo a la raíz de tu hosting.
+2. Si usas Apache/cPanel, deja `.htaccess` (fuerza `index.html` como inicio).
+3. En PipelinePro, configura la redirección post‑submit del acceso a `/taller-completo.html`.
+
+© 2025 Libres Para Prosperar
