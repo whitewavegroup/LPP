@@ -1,15 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taller Completo</title><link rel="stylesheet" href="styles.css"></head>
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller Completo — De la Escasez al Propósito</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .field{margin:14px 0}
+    label{display:block;margin-bottom:6px;color:#334155;font-weight:600}
+    textarea,input{width:100%;padding:12px 14px;border:1px solid #dbe3ee;border-radius:12px;background:#fff;font:inherit;color:#0f172a;outline:none;transition:.15s border-color,.15s box-shadow}
+    textarea{min-height:120px;resize:vertical;border-radius:16px}
+    input:focus,textarea:focus{border-color:#1D4ED8;box-shadow:0 0 0 4px rgba(29,78,216,.12)}
+    .verses .verse{margin-top:8px}
+  </style>
+</head>
 <body>
-<header class="header"><div class="wrap"><a href="index.html" class="brand">libres<span>para</span>prosperar<span>.com</span></a></div></header>
-<main class="section"><div class="wrap">
-<h1>De la Escasez al Propósito: Taller Completo</h1>
-<p class="muted">Sus respuestas se guardan localmente en este navegador.</p>
-<div class="card"><div class="field"><label>Emociones cuando hablan de dinero</label><textarea id="q1"></textarea></div></div>
-<div class="card"><div class="field"><label>Efecto de hábitos en la paz/tensión</label><textarea id="q2"></textarea></div></div>
-<div class="card"><div class="field"><label>Decisiones desde planificación</label><textarea id="q3"></textarea></div></div>
-<div class="card"><button class="btn" onclick="alert('Guardado localmente')">Guardar</button></div>
-</div></main>
-</body></html>
+  <header class="header">
+    <div class="wrap">
+      <a href="index.html" class="brand">libres<span>para</span>prosperar<span>.com</span></a>
+      <nav class="nav"><a href="talleres.html">← Volver a Talleres</a><a href="privacidad.html">Privacidad</a></nav>
+    </div>
+  </header>
+  <main class="section">
+    <div class="wrap">
+      <h1>De la Escasez al Propósito: Invitando el Cielo a tus Finanzas como Pareja</h1>
+      <p class="muted">Completen juntos. Sus respuestas se guardan localmente (en este navegador). Pueden regresar sin perderlas.</p>
+
+      <div class="card">
+        <h2>Datos de la pareja</h2>
+        <div class="grid3" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+          <div class="field"><label>Nombre(s)</label><input id="p_nombre" type="text" placeholder="Ej. Juan y María"></div>
+          <div class="field"><label>Ciudad</label><input id="p_ciudad" type="text" placeholder="Ej. Dallas, TX"></div>
+          <div class="field"><label>Teléfono</label><input id="p_tel" type="tel" placeholder="+1 (___) ___-____"></div>
+          <div class="field"><label>Email</label><input id="p_email" type="email" placeholder="tucorreo@ejemplo.com"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>1) Bienvenida e Introducción (5 min)</h2>
+        <div class="field"><label>Cuando hablan de dinero, ¿aparece más paz, tensión o incertidumbre?</label><textarea id="q1"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>2) Fundamento de las Finanzas del Reino (12 min)</h2>
+        <p>Prosperidad = tener suficiente para cumplir el llamado de Dios y bendecir a otros. La buena administración (presupuesto, salir de deudas, planear) es el “contenedor” de la provisión; la unidad de la pareja importa.</p>
+        <div class="verses">
+          <div class="verse">Filipenses 4:19 — “Mi Dios, pues, suplirá todo lo que os falta conforme a sus riquezas en gloria en Cristo Jesús.”</div>
+          <div class="verse">Proverbios 21:5 — “Los pensamientos del diligente ciertamente tienden a la abundancia; mas todo el que se apresura alocadamente, de cierto va a la pobreza.”</div>
+          <div class="verse">Lucas 14:28 — “Porque ¿quién de vosotros, queriendo edificar una torre, no se sienta primero y calcula los gastos...?”</div>
+        </div>
+        <div class="field"><label>¿Qué efecto han tenido sus hábitos en la paz o tensión de su relación?</label><textarea id="q2"></textarea></div>
+        <div class="field"><label>¿Cómo sería diferente su matrimonio si decidieran desde la planificación y no desde la urgencia?</label><textarea id="q3"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>3) Economía del Cielo y Sabiduría Profética (12 min)</h2>
+        <p>Dios quiere usarnos como canales; la riqueza incluye ideas, conexiones y favor; pedir dirección en negocios, carrera y generosidad.</p>
+        <div class="verses">
+          <div class="verse">Deuteronomio 8:18 — “Acuérdate de Jehová tu Dios, porque él te da el poder para hacer las riquezas...”</div>
+          <div class="verse">Isaías 45:3 — “Te daré los tesoros escondidos, y los secretos muy guardados...”</div>
+          <div class="verse">Santiago 1:5 — “Si alguno de vosotros tiene falta de sabiduría, pídala a Dios...”</div>
+        </div>
+        <div class="field"><label>Si ven el dinero como llave a propósitos, ¿qué cambia?</label><textarea id="q4"></textarea></div>
+        <div class="field"><label>Si reciben una idea/sabiduría de Dios, ¿cómo impacta a su familia y a otros?</label><textarea id="q5"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>4) Identidad: De la Escasez a la Abundancia (12 min)</h2>
+        <p>Somos hijos del Rey; la pobreza es mentalidad, no solo falta. La verdadera riqueza es abundancia para generosidad e impacto.</p>
+        <div class="verses">
+          <div class="verse">Romanos 8:16–17 — “El Espíritu mismo da testimonio... herederos de Dios y coherederos con Cristo...”</div>
+          <div class="verse">2 Corintios 9:8 — “Y poderoso es Dios para hacer que abunde en vosotros toda gracia...”</div>
+          <div class="verse">Juan 10:10 — “Yo he venido para que tengan vida, y para que la tengan en abundancia.”</div>
+        </div>
+        <div class="field"><label>¿Cómo se sienten al verse como herederos del Rey?</label><textarea id="q6"></textarea></div>
+        <div class="field"><label>¿Qué ajustes diarios harían creyendo esa identidad?</label><textarea id="q7"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>5) Aplicaciones Prácticas para la Familia (9 min)</h2>
+        <h3>Regla del 72</h3>
+        <p>72 ÷ tasa = años para duplicar inversión (o deuda). 8% ≈ 9 años; deuda 18% ≈ 4 años.</p>
+        <div class="verse">Proverbios 21:20 — “Tesoro precioso y aceite hay en la casa del sabio; mas el hombre insensato todo lo disipa.”</div>
+        <div class="field"><label>¿Cómo harían que el interés trabaje a su favor (ahorro/inversión vs deudas)?</label><textarea id="q8"></textarea></div>
+        <h3>Seguro de Vida como Provisión</h3>
+        <p>Más económico que acumular de golpe; asegura estabilidad para vivienda, educación, hijos.</p>
+        <div class="verse">1 Timoteo 5:8 — “Porque si alguno no provee para los suyos...”</div>
+        <div class="field"><label>¿Qué cobertura les daría verdadera tranquilidad?</label><textarea id="q9"></textarea></div>
+        <h3>Generosidad con Propósito</h3>
+        <p>Ahorrar, invertir y dar para avanzar el Reino; enseñar a los hijos a ahorrar, diezmar y sembrar.</p>
+        <div class="verse">2 Corintios 9:6–7 — “El que siembra generosamente, generosamente segará... Dios ama al dador alegre.”</div>
+        <div class="field"><label>¿Cómo se vería su familia si la generosidad fuera marca de identidad?</label><textarea id="q10"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>6) Oración en Pareja & Declaración (5 min)</h2>
+        <div class="field"><label>Declaración (escríbala aquí para recordarla)</label><textarea id="q11">Padre, Tú eres nuestra Fuente. Somos herederos con Cristo, no mendigos. Recibimos sabiduría, provisión y favor del Cielo. Administraremos bien, daremos generosamente y viviremos en Tu abundancia para avanzar Tu Reino. En el nombre de Jesús, Amén.</textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>7) Cierre y Acción (3 min)</h2>
+        <div class="verse">Efesios 3:20 — “A Aquel que es poderoso para hacer todas las cosas mucho más abundantemente de lo que pedimos o entendemos...”</div>
+        <div class="field"><label>Si esta semana dan un paso pequeño de unidad financiera, ¿qué impacto esperan en un año?</label><textarea id="q12"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>Guardar</h2>
+        <div class="row">
+          <button class="btn" id="save">💾 Guardar</button>
+          <button class="btn ghost" id="clear">🧹 Limpiar</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+  (function(){
+    const fields=["p_nombre","p_ciudad","p_tel","p_email","q1","q2","q3","q4","q5","q6","q7","q8","q9","q10","q11","q12"];
+    const KEY="lpp_full_taller_store_v1";
+    function load(){ try{ const d=JSON.parse(localStorage.getItem(KEY)||"{}"); fields.forEach(id=>{ if(d[id]!==undefined) document.getElementById(id).value=d[id]; }); }catch(e){} }
+    function collect(){ const o={}; fields.forEach(id=>o[id]=document.getElementById(id).value||""); return o; }
+    function save(){ localStorage.setItem(KEY, JSON.stringify(collect())); alert("✅ Guardado."); }
+    function clearAll(){ if(!confirm("¿Seguro?")) return; localStorage.removeItem(KEY); fields.forEach(id=>document.getElementById(id).value=""); }
+    document.getElementById("save").addEventListener("click",save);
+    document.getElementById("clear").addEventListener("click",clearAll);
+    load();
+  })();
+  </script>
+</body>
+</html>
