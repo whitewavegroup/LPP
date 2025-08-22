@@ -1,16 +1,14 @@
-# Libres Para Prosperar — Funnel con landing original (sin minutos)
+# Libres Para Prosperar — Copia con textos bloqueados
 
-Incluye:
-- `index.html` — Landing **original** restaurado (hero, beneficios, testimonios, CTA final → `lista-espera.html`).
-- `lista-espera.html` — Página con formulario PipelinePro (HkKK9MwaPAwqPRE7s1G1).
-- `talleres.html` — Resumen del taller **sin tiempos** + botón Entrar al Taller.
-- `taller-acceso.html` — Formulario de acceso (Hv49mCWtpSgYqiam4Jwy) con redirección a `taller-completo.html`.
-- `taller-completo.html` — Taller completo interactivo (preguntas completas, inputs bonitos, auto‑resize, PDF y email), **sin tiempos** en títulos.
-- `privacidad.html`, `styles.css`, `script.js`, `.htaccess` (para Apache/cPanel).
+- El **landing** usa `content.json` para los textos (hero, beneficios, versículos, testimonios). Así puedes ajustar el copy sin tocar HTML.
+- El botón de CTA del landing lleva a `lista-espera.html` (formulario de espera).
+- Página de talleres → `taller-acceso.html` (formulario de acceso) → redirección a `taller-completo.html`.
 
-## Publicación
-1. Sube todo a la raíz de tu hosting.
-2. Si usas Apache/cPanel, deja `.htaccess` (fuerza `index.html` como inicio).
-3. En PipelinePro, configura la redirección post‑submit del acceso a `/taller-completo.html`.
+## Formulario PipelinePro
+- Lista de espera: HkKK9MwaPAwqPRE7s1G1 (en `lista-espera.html`)
+- Acceso al taller: Hv49mCWtpSgYqiam4Jwy (en `taller-acceso.html`) — configura la **redirección post‑submit** a `/taller-completo.html`
+
+## Hosting
+- `.htaccess` fuerza `index.html` como página inicial en Apache/cPanel.
 
 © 2025 Libres Para Prosperar

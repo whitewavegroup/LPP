@@ -1,0 +1,30 @@
+{
+  "hero_title": "Libres para Prosperar",
+  "hero_subtitle": "Principios bíblicos para tu hogar, negocio, ministerio y vida personal.",
+  "hero_cta": "Sí, quiero estar en la lista de espera",
+  "benefits_title": "¿Qué lograrás aquí?",
+  "benefits": [
+    "Paz y claridad al hablar de dinero en pareja.",
+    "Hábitos financieros que honran a Dios y cuidan tu casa.",
+    "Estrategias prácticas: presupuesto, deuda, ahorro, inversión.",
+    "Mentalidad de abundancia para dar y servir."
+  ],
+  "scripture_block_title": "Fundamento bíblico",
+  "scripture_block": [
+    "Filipenses 4:19 — “Mi Dios, pues, suplirá todo lo que os falta conforme a sus riquezas en gloria en Cristo Jesús.”",
+    "2 Corintios 9:8 — “Y poderoso es Dios para hacer que abunde en vosotros toda gracia…”"
+  ],
+  "testimonials_title": "Testimonios",
+  "testimonials": [
+    {
+      "name": "A. & M.",
+      "quote": "Salimos con una visión unida y pasos concretos. ¡Nos devolvió la paz!"
+    },
+    {
+      "name": "J. & L.",
+      "quote": "La parte práctica nos ayudó a establecer un plan realista y a orar juntos."
+    }
+  ],
+  "cta_footer_text": "Listo para dar el siguiente paso juntos?",
+  "cta_footer_btn": "Sí, quiero estar en la lista de espera"
+}
