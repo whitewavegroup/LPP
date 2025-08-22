@@ -139,23 +139,23 @@
 <script>
 (function(){
   const fields = ["p_nombre","p_ciudad","p_tel","p_email","q1","q2","q3","q4","q5","q6","q7","q8","q9","q10","q11","q12"];
-  const KEY = "lpp_taller_respuestas_v3";
+  const KEY = "lpp_taller_respuestas_install";
 
   function load(){
-    try{{ const data = JSON.parse(localStorage.getItem(KEY)||"{{}}");
-      fields.forEach(id => {{ if(data[id]!==undefined) document.getElementById(id).value = data[id]; }});
-    }}catch(e){{}}
+    try{ const data = JSON.parse(localStorage.getItem(KEY)||"{}");
+      fields.forEach(id => { if(data[id]!==undefined) document.getElementById(id).value = data[id]; });
+    }catch(e){}
   }
-  function collect(){{ const o={{}}; fields.forEach(id=>o[id]=document.getElementById(id).value||""); return o; }}
-  function save(){{ localStorage.setItem(KEY, JSON.stringify(collect())); alert("✅ Respuestas guardadas."); }}
-  function clearAll(){{ if(!confirm("¿Seguro?")) return; localStorage.removeItem(KEY); fields.forEach(id=>document.getElementById(id).value=""); }}
+  function collect(){ const o={}; fields.forEach(id=>o[id]=document.getElementById(id).value||""); return o; }
+  function save(){ localStorage.setItem(KEY, JSON.stringify(collect())); alert("✅ Respuestas guardadas."); }
+  function clearAll(){ if(!confirm("¿Seguro?")) return; localStorage.removeItem(KEY); fields.forEach(id=>document.getElementById(id).value=""); }
 
-  async function makePDF(){{
-    const {{ jsPDF }} = window.jspdf; const pdf = new jsPDF({{unit:"pt",format:"letter"}}); const d=collect();
-    const line=(t,y,s=11,b=false)=>{{ pdf.setFont("helvetica", b?"bold":"normal"); pdf.setFontSize(s); const L=pdf.splitTextToSize(t,540); pdf.text(L,36,y); return y+L.length*(s+4); }}
+  async function makePDF(){
+    const { jsPDF } = window.jspdf; const pdf = new jsPDF({unit:"pt",format:"letter"}); const d=collect();
+    const line=(t,y,s=11,b=false)=>{ pdf.setFont("helvetica", b?"bold":"normal"); pdf.setFontSize(s); const L=pdf.splitTextToSize(t,540); pdf.text(L,36,y); return y+L.length*(s+4); }
     let y=48; y=line("De la Escasez al Propósito — Respuestas",y,16,true);
-    y=line(`Pareja: ${{d.p_nombre||"-"}} | Ciudad: ${{d.p_ciudad||"-"}}`,y);
-    y=line(`Tel: ${{d.p_tel||"-"}} | Email: ${{d.p_email||"-"}}`,y); y+=6;
+    y=line("Pareja: " + (d.p_nombre||"-") + " | Ciudad: " + (d.p_ciudad||"-"),y);
+    y=line("Tel: " + (d.p_tel||"-") + " | Email: " + (d.p_email||"-"),y); y+=6;
     const sections=[
       ["1) Emociones",d.q1],["2) Hábitos",d.q2],["2b) Planificación",d.q3],
       ["3) Propósitos",d.q4],["3b) Idea",d.q5],
@@ -163,34 +163,48 @@
       ["5) Regla 72",d.q8],["5b) Seguro vida",d.q9],["5c) Generosidad",d.q10],
       ["6) Declaración",d.q11],["7) Paso + meta",d.q12]
     ];
-    sections.forEach(([t,v])=>{{ if(y>730){{pdf.addPage(); y=48;}} y=line(t,y+10,12,true); y=line(v||"-",y+2); }});
+    sections.forEach(([t,v])=>{ if(y>730){pdf.addPage(); y=48;} y=line(t,y+10,12,true); y=line(v||"-",y+2); });
     pdf.save("Taller_LibresParaProsperar.pdf");
-  }}
-
-  function emailSelf(){{
+  }
+  function emailSelf(){
     const d=collect();
     const subject=encodeURIComponent("Mis respuestas — Taller Libres Para Prosperar");
     const body=encodeURIComponent(
-`Pareja: ${{d.p_nombre||"-"}} | Ciudad: ${{d.p_ciudad||"-"}}
-Tel: ${{d.p_tel||"-"}} | Email: ${{d.p_email||"-"}}
+"Pareja: "+(d.p_nombre||"-")+" | Ciudad: "+(d.p_ciudad||"-")+"
+"+
+"Tel: "+(d.p_tel||"-")+" | Email: "+(d.p_email||"-")+"
 
-1) Emociones: ${{d.q1||"-"}}
-2) Hábitos: ${{d.q2||"-"}}
-2b) Planificación: ${{d.q3||"-"}}
-3) Propósitos: ${{d.q4||"-"}}
-3b) Idea: ${{d.q5||"-"}}
-4) Herederos: ${{d.q6||"-"}}
-4b) Ajustes: ${{d.q7||"-"}}
-5) Regla 72: ${{d.q8||"-"}}
-5b) Seguro vida: ${{d.q9||"-"}}
-5c) Generosidad: ${{d.q10||"-"}}
-6) Declaración: ${{d.q11||"-"}}
-7) Paso + meta: ${{d.q12||"-"}}
+"+
+"1) Emociones: "+(d.q1||"-")+"
+"+
+"2) Hábitos: "+(d.q2||"-")+"
+"+
+"2b) Planificación: "+(d.q3||"-")+"
+"+
+"3) Propósitos: "+(d.q4||"-")+"
+"+
+"3b) Idea: "+(d.q5||"-")+"
+"+
+"4) Herederos: "+(d.q6||"-")+"
+"+
+"4b) Ajustes: "+(d.q7||"-")+"
+"+
+"5) Regla 72: "+(d.q8||"-")+"
+"+
+"5b) Seguro vida: "+(d.q9||"-")+"
+"+
+"5c) Generosidad: "+(d.q10||"-")+"
+"+
+"6) Declaración: "+(d.q11||"-")+"
+"+
+"7) Paso + meta: "+(d.q12||"-")+"
 
-(Adjunta el PDF descargado desde la página).`);
+"+
+"(Adjunta el PDF descargado desde la página)."
+    );
     const to=encodeURIComponent(d.p_email||"");
-    window.location.href=`mailto:${{to}}?subject=${{subject}}&body=${{body}}`;
-  }}
+    window.location.href = "mailto:"+to+"?subject="+subject+"&body="+body;
+  }
 
   document.getElementById("save").addEventListener("click",save);
   document.getElementById("clear").addEventListener("click",clearAll);
@@ -198,11 +212,11 @@ Tel: ${{d.p_tel||"-"}} | Email: ${{d.p_email||"-"}}
   document.getElementById("emailBtn").addEventListener("click",emailSelf);
 
   // Auto-resize for nicer typing experience
-  function autoResize(e){{ e.target.style.height='auto'; e.target.style.height=(e.target.scrollHeight+6)+'px'; }}
-  document.querySelectorAll('textarea').forEach(t=>{{ t.addEventListener('input', autoResize); setTimeout(()=>autoResize({target:t}), 50); }});
+  function autoResize(e){ e.target.style.height='auto'; e.target.style.height=(e.target.scrollHeight+6)+'px'; }
+  document.querySelectorAll('textarea').forEach(t=>{ t.addEventListener('input', autoResize); setTimeout(()=>autoResize({target:t}), 50); });
 
   load();
-}})();
+})();
 </script>
 </body>
 </html>
