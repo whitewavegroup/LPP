@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Política de Privacidad — Libres Para Prosperar</title>
+  <link rel="icon" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px;">
-      <a href="index.html" class="brand">libresparaprosperar.com</a>
-      <nav class="h-list">
-        <a href="talleres.html">Talleres</a>
-      </nav>
+<header class="header">
+  <div class="wrap">
+    <a href="index.html" class="brand">libres<span>para</span>prosperar<span>.com</span></a>
+    <nav class="nav" id="nav">
+      <a href="talleres.html">Talleres</a>
+      <a href="privacidad.html" aria-current="page">Privacidad</a>
+    </nav>
+    <button class="menu" id="menuBtn" aria-label="Abrir menú">☰</button>
+  </div>
+</header>
+
+<main class="section">
+  <div class="wrap">
+    <h1>Política de Privacidad</h1>
+    <div class="card"><p>En <strong>LibresParaProsperar.com</strong> respetamos y protegemos la privacidad de nuestros usuarios.</p></div>
+    <div class="card">
+      <h2>1. Información que recopilamos</h2>
+      <p>Nombre, ciudad, teléfono y correo electrónico cuando completas un formulario en nuestro sitio.</p>
     </div>
-  </header>
-  <main class="section">
-    <div class="wrap">
-      <h1>Política de Privacidad</h1>
-      <div class="card"><p>Los datos del taller se guardan localmente en tu navegador. Sólo se comparten si descargas un PDF o envías un correo desde tu dispositivo.</p></div>
-      <div class="card"><p>Para consultas, escríbenos a <a href="mailto:blanco@libresparaprosperar.com">blanco@libresparaprosperar.com</a>.</p></div>
+    <div class="card">
+      <h2>2. Uso de la información</h2>
+      <ul>
+        <li>Gestionar registros en talleres, conferencias y actividades.</li>
+        <li>Enviar recordatorios y notificaciones relacionadas (mensajes transaccionales).</li>
+        <li>Compartir promociones y actualizaciones (mensajes de marketing).</li>
+      </ul>
     </div>
-  </main>
-  <footer>
-    <div class="wrap"><small>© 2025 Libres Para Prosperar</small></div>
-  </footer>
+    <div class="card">
+      <h2>3. Consentimiento de mensajes transaccionales</h2>
+      <p>Al marcar la casilla correspondiente, aceptas recibir mensajes transaccionales relacionados con tu cuenta, pedidos o servicios solicitados. La frecuencia puede variar. Pueden aplicarse cargos por mensajes y datos. Responde AYUDA para asistencia o ALTO para cancelar.</p>
+    </div>
+    <div class="card">
+      <h2>4. Consentimiento de mensajes promocionales</h2>
+      <p>Al marcar la casilla correspondiente, aceptas recibir mensajes de marketing y promociones, incluyendo ofertas especiales y actualizaciones. La frecuencia puede variar. Pueden aplicarse cargos por mensajes y datos. Responde AYUDA para asistencia o ALTO para cancelar.</p>
+    </div>
+    <div class="card">
+      <h2>5. Cookies</h2>
+      <p>Podemos usar cookies para mejorar la experiencia. Actualmente no rastreamos de forma personalizada; podrás aceptar o rechazar en el futuro. Configura tu navegador si deseas limitar el uso de cookies.</p>
+    </div>
+    <div class="card">
+      <h2>6. Protección de datos</h2>
+      <p>Aplicamos medidas razonables de seguridad para proteger tu información personal.</p>
+    </div>
+    <div class="card">
+      <h2>7. Contacto</h2>
+      <p>Escríbenos a <a href="mailto:blanco@libresparaprosperar.com">blanco@libresparaprosperar.com</a></p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <small>© 2025 libresparaprosperar.com — Hecho con propósito • 
+      <a href="talleres.html">Talleres</a> • 
+      <a href="privacidad.html">Política de privacidad</a></small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
