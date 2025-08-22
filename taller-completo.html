@@ -20,7 +20,7 @@
   <main class="section">
     <div class="wrap">
       <h1>De la Escasez al Propósito: Invitando el Cielo a tus Finanzas como Pareja</h1>
-      <p class="lead">Completen juntos. Sus respuestas se guardan localmente. Al final pueden descargar un PDF y enviarlo por email.</p>
+      <p class="muted">Completen juntos. Sus respuestas se guardan localmente. Al final pueden descargar un PDF y enviarlo por email.</p>
 
       <div class="card">
         <h2>Datos de la pareja</h2>
@@ -139,7 +139,7 @@
 <script>
 (function(){
   const fields = ["p_nombre","p_ciudad","p_tel","p_email","q1","q2","q3","q4","q5","q6","q7","q8","q9","q10","q11","q12"];
-  const KEY = "lpp_taller_respuestas_final";
+  const KEY = "lpp_taller_respuestas_finalverses";
 
   function load(){
     try{ const data = JSON.parse(localStorage.getItem(KEY)||"{}");
@@ -211,6 +211,7 @@
   document.getElementById("pdf").addEventListener("click",makePDF);
   document.getElementById("emailBtn").addEventListener("click",emailSelf);
 
+  // Auto-resize
   function autoResize(e){ e.target.style.height='auto'; e.target.style.height=(e.target.scrollHeight+6)+'px'; }
   document.querySelectorAll('textarea').forEach(t=>{ t.addEventListener('input', autoResize); setTimeout(()=>autoResize({target:t}), 50); });
 
