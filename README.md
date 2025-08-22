@@ -1,12 +1,14 @@
-# LibresParaProsperar — Repo completo
-- `index.html`: landing original (CTA principal a `lista-espera.html`, "Descubre el Taller" a `talleres.html`).
-- `lista-espera.html`: formulario PipelinePro (HkKK9MwaPAwqPRE7s1G1).
-- `talleres.html`: resumen + botón a `taller-acceso.html`.
-- `taller-acceso.html`: formulario PipelinePro (Hv49mCWtpSgYqiam4Jwy) → redirigir a `/taller-completo.html`.
-- `taller-completo.html`: taller interactivo con guardado local.
-- `privacidad.html`
-- `styles.css`, `script.js`
-- `.htaccess` (Apache/cPanel).
+# LibresParaProsperar — Repo listo
+Incluye landing original (index.html), lista de espera (PipelinePro), talleres y taller completo.
 
-## Nota
-Ajusta la **redirección post-submit** del formulario de acceso en PipelinePro a `/taller-completo.html`.
+## Rutas
+- /index.html — Landing
+- /lista-espera.html — Form Lista de Espera (PipelinePro HkKK9MwaPAwqPRE7s1G1)
+- /talleres.html — Resumen y CTA al acceso
+- /taller-acceso.html — Form Acceso (PipelinePro Hv49mCWtpSgYqiam4Jwy) → redirigir a /taller-completo.html
+- /taller-completo.html — Taller interactivo
+- /privacidad.html — Política
+
+## Notas
+- Asegura la redirección post-submit en PipelinePro (acceso) a /taller-completo.html
+- Limpia caché del navegador tras subir (Cmd+Shift+R / Ctrl+F5)
