@@ -1,197 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taller Completo — De la Escasez al Propósito</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
-<header>
-  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px;">
-    <a href="index.html" class="brand">libres<span>para</span>prosperar<span>.com</span></a>
-    <nav>
-      <a href="talleres.html">← Volver a Talleres</a>
-      <a href="privacidad.html">Privacidad</a>
-    </nav>
-  </div>
-</header>
-<main class="section">
-  <div class="wrap">
-    <h1>De la Escasez al Propósito: Invitando el Cielo a tus Finanzas como Pareja</h1>
-    <p class="muted">Completen juntos. Sus respuestas se guardan localmente. Al final pueden descargar un PDF y enviarlo por email.</p>
+  <header>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px;">
+      <a href="index.html" class="brand">libres<span>para</span>prosperar<span>.com</span></a>
+      <nav>
+        <a href="talleres.html">← Volver a Talleres</a>
+        <a href="privacidad.html">Privacidad</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="card">
-      <h2>Datos de la pareja</h2>
-      <div class="grid2">
-        <div class="field"><label>Nombre(s)</label><input id="p_nombre" type="text" placeholder="Ej. Juan y María"></div>
-        <div class="field"><label>Ciudad</label><input id="p_ciudad" type="text" placeholder="Ej. Dallas, TX"></div>
-        <div class="field"><label>Teléfono</label><input id="p_tel" type="tel" placeholder="+1 (___) ___-____"></div>
-        <div class="field"><label>Email</label><input id="p_email" type="email" placeholder="tucorreo@ejemplo.com"></div>
+  <main class="section">
+    <div class="wrap">
+      <h1>De la Escasez al Propósito: Invitando el Cielo a tus Finanzas como Pareja</h1>
+      <p class="muted">Completen juntos. Sus respuestas se guardan localmente. Al final pueden descargar un PDF y enviarlo por email.</p>
+
+      <div class="card">
+        <h2>Datos de la pareja</h2>
+        <div class="grid2">
+          <div class="field"><label>Nombre(s)</label><input id="p_nombre" type="text" placeholder="Ej. Juan y María"></div>
+          <div class="field"><label>Ciudad</label><input id="p_ciudad" type="text" placeholder="Ej. Dallas, TX"></div>
+          <div class="field"><label>Teléfono</label><input id="p_tel" type="tel" placeholder="+1 (___) ___-____"></div>
+          <div class="field"><label>Email</label><input id="p_email" type="email" placeholder="tucorreo@ejemplo.com"></div>
+        </div>
+        <p class="notice">Estos datos personalizan tu PDF y el correo; no se envían a servidores desde esta página.</p>
+      </div>
+
+      <div class="card">
+        <h2>1) Bienvenida e Introducción</h2>
+        <p><strong>Pregunta inicial:</strong> “Cuando hablan de dinero en su matrimonio, ¿qué emociones suelen aparecer más: paz, tensión o incertidumbre?”</p>
+        <div class="field"><label>Tu respuesta</label><textarea id="q1" placeholder="Escribe aquí…"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>2) Fundamento de las Finanzas del Reino</h2>
+        <div class="verse">Filipenses 4:19 — “Mi Dios, pues, suplirá todo lo que os falta conforme a sus riquezas en gloria en Cristo Jesús.”</div>
+        <div class="verse">Proverbios 21:5 — “Los pensamientos del diligente ciertamente tienden a la abundancia; mas todo el que se apresura alocadamente, de cierto va a la pobreza.”</div>
+        <div class="verse">Lucas 14:28 — “Porque ¿quién de vosotros, queriendo edificar una torre, no se sienta primero y calcula los gastos, a ver si tiene lo que necesita para acabarla?”</div>
+        <div class="field"><label>Impacto de nuestros hábitos en la paz/tensión:</label><textarea id="q2" placeholder="Escribe aquí…"></textarea></div>
+        <div class="field"><label>Decisiones desde planificación (no urgencia):</label><textarea id="q3" placeholder="Escribe aquí…"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>3) La Economía del Cielo y la Sabiduría</h2>
+        <div class="verse">Deuteronomio 8:18 — “Acuérdate de Jehová tu Dios, porque él te da el poder para hacer las riquezas…”</div>
+        <div class="verse">Isaías 45:3 — “Te daré los tesoros escondidos, y los secretos muy guardados…”</div>
+        <div class="verse">Santiago 1:5 — “Y si alguno de vosotros tiene falta de sabiduría, pídala a Dios…”</div>
+        <div class="field"><label>Dinero como llave para propósitos: ¿qué cambiaría?</label><textarea id="q4" placeholder="Escribe aquí…"></textarea></div>
+        <div class="field"><label>Idea/sabiduría para multiplicar: impacto en familia/otros</label><textarea id="q5" placeholder="Escribe aquí…"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>4) Identidad: De la Escasez a la Abundancia</h2>
+        <div class="verse">Romanos 8:16–17 — “El Espíritu mismo da testimonio… herederos de Dios y coherederos con Cristo…”</div>
+        <div class="verse">2 Corintios 9:8 — “Y poderoso es Dios para hacer que abunde en vosotros toda gracia…”</div>
+        <div class="verse">Juan 10:10 — “Yo he venido para que tengan vida, y para que la tengan en abundancia.”</div>
+        <div class="field"><label>¿Cómo cambian mis decisiones si vivo como heredero?</label><textarea id="q6" placeholder="Escribe aquí…"></textarea></div>
+        <div class="field"><label>Áreas diarias a ajustar por identidad de abundancia</label><textarea id="q7" placeholder="Escribe aquí…"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>5) Aplicaciones Prácticas</h2>
+        <h3>La Regla del 72</h3>
+        <div class="verse">Proverbios 21:20 — “Tesoro precioso y aceite hay en la casa del sabio…”</div>
+        <div class="field"><label>¿Cómo hacer que el interés trabaje a favor?</label><textarea id="q8" placeholder="Escribe aquí…"></textarea></div>
+        <h3>Seguro de Vida</h3>
+        <div class="verse">1 Timoteo 5:8 — “Si alguno no provee para los suyos…”</div>
+        <div class="field"><label>¿Qué protección necesitamos evaluar?</label><textarea id="q9" placeholder="Escribe aquí…"></textarea></div>
+        <h3>Generosidad</h3>
+        <div class="verse">2 Corintios 9:6–7 — “Dios ama al dador alegre.”</div>
+        <div class="field"><label>Prácticas de dar/ahorrar/sembrar que adoptaremos</label><textarea id="q10" placeholder="Escribe aquí…"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>6) Oración & Declaración</h2>
+        <div class="field"><label>Nuestra declaración personal</label><textarea id="q11" placeholder="Escribe aquí…"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>7) Cierre y Acción</h2>
+        <div class="verse">Efesios 3:20 — “A Aquel que es poderoso para hacer más abundantemente…”</div>
+        <div class="field"><label>Paso pequeño (esta semana) y meta (1 año)</label><textarea id="q12" placeholder="Escribe aquí…"></textarea></div>
+      </div>
+
+      <div class="card">
+        <h2>Exportar y Enviar</h2>
+        <p class="notice">Tus respuestas se guardan en este navegador (localStorage). Descarga un PDF o abre tu correo con el resumen.</p>
+        <div class="actions">
+          <button class="btn" id="save">💾 Guardar</button>
+          <button class="btn ghost" id="clear">🧹 Limpiar</button>
+          <button class="btn" id="pdf">📄 Descargar PDF</button>
+          <button class="btn" id="emailBtn">✉️ Enviármelo por email</button>
+        </div>
       </div>
     </div>
+  </main>
 
-    <div class="card">
-      <h2>1) Bienvenida e Introducción</h2>
-      <p><strong>Pregunta inicial:</strong> “Cuando hablan de dinero en su matrimonio, ¿qué emociones suelen aparecer más: paz, tensión o incertidumbre?”</p>
-      <div class="field"><label>Tu respuesta</label><textarea id="q1" placeholder="Escribe aquí…"></textarea></div>
+  <footer>
+    <div class="wrap">
+      <small>© 2025 Libres Para Prosperar — <a href="privacidad.html">Política de privacidad</a></small>
     </div>
-
-    <div class="card">
-      <h2>2) Fundamento de las Finanzas del Reino</h2>
-      <div class="verse">Filipenses 4:19 — “Mi Dios, pues, suplirá todo lo que os falta conforme a sus riquezas en gloria en Cristo Jesús.”</div>
-      <div class="verse">Proverbios 21:5 — “Los pensamientos del diligente ciertamente tienden a la abundancia; mas todo el que se apresura alocadamente, de cierto va a la pobreza.”</div>
-      <div class="verse">Lucas 14:28 — “Porque ¿quién de vosotros, queriendo edificar una torre, no se sienta primero y calcula los gastos, a ver si tiene lo que necesita para acabarla?”</div>
-      <div class="field"><label>¿Qué efecto han tenido sus hábitos financieros en la paz o tensión de su relación?</label><textarea id="q2" placeholder="Escribe aquí…"></textarea></div>
-      <div class="field"><label>¿Cómo sería diferente su matrimonio si pudieran tomar decisiones financieras desde la planificación y no desde la urgencia?</label><textarea id="q3" placeholder="Escribe aquí…"></textarea></div>
-    </div>
-
-    <div class="card">
-      <h2>3) La Economía del Cielo y la Sabiduría Profética</h2>
-      <div class="verse">Deuteronomio 8:18 — “Acuérdate de Jehová tu Dios, porque él te da el poder para hacer las riquezas, a fin de confirmar su pacto…”</div>
-      <div class="verse">Isaías 45:3 — “Te daré los tesoros escondidos, y los secretos muy guardados; para que sepas que yo soy Jehová…”</div>
-      <div class="verse">Santiago 1:5 — “Y si alguno de vosotros tiene falta de sabiduría, pídala a Dios, el cual da a todos abundantemente…”</div>
-      <div class="field"><label>¿Qué pasaría si empezaran a ver el dinero no solo como ingresos, sino como una llave para abrir propósitos y oportunidades que Dios ya tiene preparados para ustedes?</label><textarea id="q4" placeholder="Escribe aquí…"></textarea></div>
-      <div class="field"><label>Si recibieran sabiduría o una idea divina para multiplicar sus recursos, ¿cómo impactaría eso a su familia y a las personas que Dios ha puesto a su alrededor?</label><textarea id="q5" placeholder="Escribe aquí…"></textarea></div>
-    </div>
-
-    <div class="card">
-      <h2>4) Identidad: De la Escasez a la Abundancia</h2>
-      <div class="verse">Romanos 8:16–17 — “El Espíritu mismo da testimonio… herederos de Dios y coherederos con Cristo…”</div>
-      <div class="verse">2 Corintios 9:8 — “Y poderoso es Dios para hacer que abunde en vosotros toda gracia…”</div>
-      <div class="verse">Juan 10:10 — “Yo he venido para que tengan vida, y para que la tengan en abundancia.”</div>
-      <div class="field"><label>¿Cómo se sienten cuando piensan que son herederos del Rey en vez de simples sobrevivientes económicos?</label><textarea id="q6" placeholder="Escribe aquí…"></textarea></div>
-      <div class="field"><label>¿Qué aspectos de sus decisiones diarias cambiarían si realmente creyeran que Dios ya los hizo herederos de Su abundancia?</label><textarea id="q7" placeholder="Escribe aquí…"></textarea></div>
-    </div>
-
-    <div class="card">
-      <h2>5) Aplicaciones Prácticas para la Familia</h2>
-      <h3>La Regla del 72</h3>
-      <div class="verse">Proverbios 21:20 — “Tesoro precioso y aceite hay en la casa del sabio; mas el hombre insensato todo lo disipa.”</div>
-      <div class="field"><label>¿Cómo cambiaría el futuro de su familia si el interés trabajara a su favor (ahorro/inversión) en lugar de en su contra (deuda)?</label><textarea id="q8" placeholder="Escribe aquí…"></textarea></div>
-      <h3>El Seguro de Vida como Provisión Práctica</h3>
-      <div class="verse">1 Timoteo 5:8 — “Porque si alguno no provee para los suyos… ha negado la fe…”</div>
-      <div class="field"><label>¿Qué tranquilidad sentirían si supieran que, aun en lo inesperado, su familia estaría cuidada y protegida?</label><textarea id="q9" placeholder="Escribe aquí…"></textarea></div>
-      <h3>Vivir con Propósito de Generosidad</h3>
-      <div class="verse">2 Corintios 9:6–7 — “El que siembra escasamente, también segará escasamente… Dios ama al dador alegre.”</div>
-      <div class="field"><label>¿Cómo se vería su matrimonio y su familia si la generosidad no fuera una obligación, sino una marca de identidad?</label><textarea id="q10" placeholder="Escribe aquí…"></textarea></div>
-    </div>
-
-    <div class="card">
-      <h2>6) Ejercicio de Oración en Pareja & Declaración</h2>
-      <ol>
-        <li>Agradecer a Dios por su provisión.</li>
-        <li>Pedir sabiduría y estrategia en una decisión financiera.</li>
-        <li>Declarar identidad como herederos del Reino.</li>
-      </ol>
-      <div class="field"><label>Escribe aquí su declaración personal</label><textarea id="q11" placeholder="Escribe aquí…"></textarea></div>
-    </div>
-
-    <div class="card">
-      <h2>7) Cierre y Acción</h2>
-      <div class="verse">Efesios 3:20 — “Y a Aquel que es poderoso para hacer todas las cosas mucho más abundantemente de lo que pedimos o entendemos…”</div>
-      <div class="field"><label>Si en la próxima semana dan un paso pequeño pero intencional de unidad financiera, ¿qué impacto creen que podría tener en su matrimonio dentro de un año?</label><textarea id="q12" placeholder="Escribe aquí…"></textarea></div>
-    </div>
-
-    <div class="card">
-      <h2>Exportar y Enviar</h2>
-      <p class="muted">Tus respuestas se guardan en este navegador (localStorage). Puedes descargar un PDF o abrir tu correo con un resumen (adjunta el PDF manualmente).</p>
-      <div class="actions">
-        <button class="btn" id="save">💾 Guardar</button>
-        <button class="btn ghost" id="clear">🧹 Limpiar</button>
-        <button class="btn" id="pdf">📄 Descargar PDF</button>
-        <button class="btn" id="emailBtn">✉️ Enviármelo por email</button>
-      </div>
-    </div>
-
-    <a href="talleres.html" class="btn ghost">← Volver a la página del taller</a>
-  </div>
-</main>
-<footer>
-  <div class="wrap"><small>© 2025 libresparaprosperar.com</small></div>
-</footer>
+  </footer>
 
 <script>
 (function(){
   const fields = ["p_nombre","p_ciudad","p_tel","p_email","q1","q2","q3","q4","q5","q6","q7","q8","q9","q10","q11","q12"];
-  const KEY = "lpp_taller_respuestas_final";
-
-  function load(){
-    try{ const data = JSON.parse(localStorage.getItem(KEY)||"{}");
-      fields.forEach(id => { if(data[id]!==undefined) document.getElementById(id).value = data[id]; });
-    }catch(e){}
-  }
-  function collect(){ const o={}; fields.forEach(id=>o[id]=document.getElementById(id).value||""); return o; }
-  function save(){ localStorage.setItem(KEY, JSON.stringify(collect())); alert("✅ Respuestas guardadas."); }
-  function clearAll(){ if(!confirm("¿Seguro?")) return; localStorage.removeItem(KEY); fields.forEach(id=>document.getElementById(id).value=""); }
-
-  async function makePDF(){
-    const { jsPDF } = window.jspdf; const pdf = new jsPDF({unit:"pt",format:"letter"}); const d=collect();
-    const line=(t,y,s=11,b=false)=>{ pdf.setFont("helvetica", b?"bold":"normal"); pdf.setFontSize(s); const L=pdf.splitTextToSize(t,540); pdf.text(L,36,y); return y+L.length*(s+4); }
+  const KEY = "lpp_modal_workshop_v1";
+  function load(){ try{{ const d=JSON.parse(localStorage.getItem(KEY)||"{{}}"); fields.forEach(id=>{{ if(d[id]!==undefined) document.getElementById(id).value=d[id]; }});}catch(e){{}}}
+  function collect(){{ const o={{}}; fields.forEach(id=>o[id]=document.getElementById(id).value||""); return o; }}
+  function save(){{ localStorage.setItem(KEY, JSON.stringify(collect())); alert("✅ Guardado."); }}
+  function clearAll(){{ if(!confirm("¿Seguro?")) return; localStorage.removeItem(KEY); fields.forEach(id=>document.getElementById(id).value=""); }}
+  async function makePDF(){{ const {{ jsPDF }} = window.jspdf; const pdf=new jsPDF({{unit:"pt",format:"letter"}}); const d=collect();
+    const line=(t,y,s=11,b=false)=>{{ pdf.setFont("helvetica", b?"bold":"normal"); pdf.setFontSize(s); const L=pdf.splitTextToSize(t,540); pdf.text(L,36,y); return y+L.length*(s+4); }}
     let y=48; y=line("De la Escasez al Propósito — Respuestas",y,16,true);
-    y=line("Pareja: " + (d.p_nombre||"-") + " | Ciudad: " + (d.p_ciudad||"-"),y);
-    y=line("Tel: " + (d.p_tel||"-") + " | Email: " + (d.p_email||"-"),y); y+=6;
-    const sections=[
-      ["1) Emociones",d.q1],["2) Hábitos",d.q2],["2b) Planificación",d.q3],
-      ["3) Propósitos",d.q4],["3b) Idea",d.q5],
-      ["4) Herederos",d.q6],["4b) Ajustes",d.q7],
-      ["5) Regla 72",d.q8],["5b) Seguro vida",d.q9],["5c) Generosidad",d.q10],
-      ["6) Declaración",d.q11],["7) Paso + meta",d.q12]
-    ];
-    sections.forEach(([t,v])=>{ if(y>730){pdf.addPage(); y=48;} y=line(t,y+10,12,true); y=line(v||"-",y+2); });
-    pdf.save("Taller_LibresParaProsperar.pdf");
-  }
-  function emailSelf(){
-    const d=collect();
-    const subject=encodeURIComponent("Mis respuestas — Taller Libres Para Prosperar");
-    const body=encodeURIComponent(
-"Pareja: "+(d.p_nombre||"-")+" | Ciudad: "+(d.p_ciudad||"-")+"
-"+
-"Tel: "+(d.p_tel||"-")+" | Email: "+(d.p_email||"-")+"
+    y=line(`Pareja: ${{d.p_nombre||"-"}} | Ciudad: ${{d.p_ciudad||"-"}}`,y);
+    y=line(`Tel: ${{d.p_tel||"-"}} | Email: ${{d.p_email||"-"}}`,y); y+=6;
+    const sections=[["1) Emociones",d.q1],["2) Hábitos",d.q2],["2b) Planificación",d.q3],["3) Propósitos",d.q4],["3b) Idea",d.q5],["4) Herederos",d.q6],["4b) Ajustes",d.q7],["5) Regla 72",d.q8],["5b) Seguro vida",d.q9],["5c) Generosidad",d.q10],["6) Declaración",d.q11],["7) Paso + meta",d.q12]];
+    sections.forEach(([t,v])=>{{ if(y>730){{pdf.addPage(); y=48;}} y=line(t,y+10,12,true); y=line(v||"-",y+2); }});
+    pdf.save("Taller_LibresParaProsperar.pdf"); }}
+  function emailSelf(){{ const d=collect(); const subject=encodeURIComponent("Mis respuestas — Taller Libres Para Prosperar"); const body=encodeURIComponent(
+`Pareja: ${{d.p_nombre||"-"}} | Ciudad: ${{d.p_ciudad||"-"}}
+Tel: ${{d.p_tel||"-"}} | Email: ${{d.p_email||"-"}}
 
-"+
-"1) Emociones: "+(d.q1||"-")+"
-"+
-"2) Hábitos: "+(d.q2||"-")+"
-"+
-"2b) Planificación: "+(d.q3||"-")+"
-"+
-"3) Propósitos: "+(d.q4||"-")+"
-"+
-"3b) Idea: "+(d.q5||"-")+"
-"+
-"4) Herederos: "+(d.q6||"-")+"
-"+
-"4b) Ajustes: "+(d.q7||"-")+"
-"+
-"5) Regla 72: "+(d.q8||"-")+"
-"+
-"5b) Seguro vida: "+(d.q9||"-")+"
-"+
-"5c) Generosidad: "+(d.q10||"-")+"
-"+
-"6) Declaración: "+(d.q11||"-")+"
-"+
-"7) Paso + meta: "+(d.q12||"-")+"
+1) Emociones: ${{d.q1||"-"}}
+2) Hábitos: ${{d.q2||"-"}}
+2b) Planificación: ${{d.q3||"-"}}
+3) Propósitos: ${{d.q4||"-"}}
+3b) Idea: ${{d.q5||"-"}}
+4) Herederos: ${{d.q6||"-"}}
+4b) Ajustes: ${{d.q7||"-"}}
+5) Regla 72: ${{d.q8||"-"}}
+5b) Seguro vida: ${{d.q9||"-"}}
+5c) Generosidad: ${{d.q10||"-"}}
+6) Declaración: ${{d.q11||"-"}}
+7) Paso + meta: ${{d.q12||"-"}}
 
-"+
-"(Adjunta el PDF descargado desde la página)."
-    );
-    const to=encodeURIComponent(d.p_email||"");
-    window.location.href = "mailto:"+to+"?subject="+subject+"&body="+body;
-  }
-
+(Adjunta el PDF descargado desde la página).`); const to=encodeURIComponent(d.p_email||""); window.location.href=`mailto:${{to}}?subject=${{subject}}&body=${{body}}`; }}
   document.getElementById("save").addEventListener("click",save);
   document.getElementById("clear").addEventListener("click",clearAll);
   document.getElementById("pdf").addEventListener("click",makePDF);
   document.getElementById("emailBtn").addEventListener("click",emailSelf);
-
   // Auto-resize
-  function autoResize(e){ e.target.style.height='auto'; e.target.style.height=(e.target.scrollHeight+6)+'px'; }
-  document.querySelectorAll('textarea').forEach(t=>{ t.addEventListener('input', autoResize); setTimeout(()=>autoResize({target:t}), 50); });
-
+  function autoResize(e){{ e.target.style.height='auto'; e.target.style.height=(e.target.scrollHeight+6)+'px'; }}
+  document.querySelectorAll('textarea').forEach(t=>{{ t.addEventListener('input', autoResize); setTimeout(()=>autoResize({target:t}), 50); }});
   load();
-})();
-</script>
+})();</script>
+<script src="script.js"></script>
 </body>
 </html>

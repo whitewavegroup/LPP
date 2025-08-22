@@ -1,17 +1,13 @@
-# Libres Para Prosperar — Sitio completo (Landing central)
+# Libres Para Prosperar — Modal Waitlist Build
+Este build agrega un **modal** para la *lista de espera* en el landing.
 
-- `index.html` → **Landing principal** (central) con CTA hacia `talleres.html`.
-- `talleres.html` → Taller con formulario **PipelinePro** embebido.
-- `privacidad.html` → Política de Privacidad.
-- `styles.css`, `script.js`, `favicon.svg`, `og-cover.jpg`.
+## Páginas
+- `index.html` → Landing. Botón **Descubre el Taller** → `talleres.html`. Botón **Lista de espera** abre **modal** con PipelinePro.
+- `talleres.html` → Resumen + botón **Entrar al Taller** → `taller-acceso.html`.
+- `taller-acceso.html` → Formulario PipelinePro (acceso). Configura redirect a `/taller-completo.html`.
+- `taller-completo.html` → Taller interactivo con guardado local, PDF y email.
+- `privacidad.html`.
+- `styles.css`, `script.js`.
 
-## Deploy (GitHub Pages)
-```bash
-git init
-git add .
-git commit -m "Sitio Libres Para Prosperar (landing central + talleres + privacidad)"
-git branch -M main
-git remote add origin <TU_REPO_URL>
-git push -u origin main
-```
-Luego: Settings → Pages → Deploy from a branch → main → /root.
+## Notas
+- El estilo del botón dentro del **iframe** depende del CSS del formulario en PipelinePro. Copia el CSS recomendado en el campo **Custom CSS** del formulario.
