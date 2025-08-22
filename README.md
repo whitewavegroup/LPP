@@ -1,12 +1,11 @@
-# LibresParaProsperar — FIX + WYSIWYG
-- Beneficios en 2 filas x 3 columnas (desktop), responsive a 2 y 1 columna.
-- Agenda sin fechas: reemplazado por “Añádete a la Lista de espera” con botones.
-- WYSIWYG básico: botón 🖊️ permite editar textos con data-editable y guardar en localStorage.
-
-## Edición inline
-- Botón flotante “🖊️” → activa modo edición.
-- Haz cambios y pulsa **Guardar** (se guardan en este navegador).
-- Para revertir en un dispositivo, borra `localStorage` (clave: `lpp_inline_edits_v1`).
+# LibresParaProsperar — Build sin Admin
+- Admin removido (oculto completamente).
+- Taller completo con campos **estéticos** (bordes suaves, foco, placeholders).
 
 ## Flujo
-- Landing → Lista de Espera (PipelinePro) / Talleres → Acceso → Taller Completo.
+- Landing: CTA “Descubre el Taller” → /taller-acceso.html
+- /taller-acceso.html: Formulario PipelinePro (ID Hv49mCWtpSgYqiam4Jwy) → redirigido a /taller-completo.html
+- /taller-completo.html: Responder + Guardar local
+
+## Nota
+- Configura en PipelinePro la redirección post-submit a **/taller-completo.html**.
