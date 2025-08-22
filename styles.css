@@ -22,7 +22,8 @@
 .section.alt{background:#ffffff}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .bullets{margin:0;padding-left:18px}
-#beneficios .grid3{grid-template-columns:repeat(3,1fr);gap:22px}
+/* BENEFICIOS 3x2 */
+#beneficios .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 #beneficios .benefit{background:#fff;border:1px solid #eef2f7;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.05);padding:18px;text-align:center;transition:transform .2s}
 #beneficios .benefit:hover{transform:translateY(-4px)}
 #beneficios .benefit .icon{font-size:1.8rem;margin-bottom:6px}
@@ -31,5 +32,13 @@
 .focus{background:linear-gradient(180deg,#ffffff 0%,#eef2ff 100%)}
 .row{display:flex;gap:12px;flex-wrap:wrap}
 .micro{font-size:.9rem}
-@media (max-width:900px){ .hero-grid{grid-template-columns:1fr} .nav{display:none} .menu{display:block} #beneficios .grid3{grid-template-columns:repeat(2,1fr)} }
-@media (max-width:600px){ #beneficios .grid3{grid-template-columns:1fr} }
+/* Responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .nav{display:none}
+  .menu{display:block}
+  #beneficios .grid3{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+  #beneficios .grid3{grid-template-columns:1fr}
+}
