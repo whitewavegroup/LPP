@@ -18,7 +18,7 @@
 <body>
 <header class="header">
   <div class="wrap">
-    <a href="index.html" class="brand">libres<span>para</span>prosperar<span>.com</span></a>
+    <a href="index.html" class="brand" data-editable>libres<span>para</span>prosperar<span>.com</span></a>
     <nav class="nav" id="nav">
       <a href="#oferta">Oferta</a>
       <a href="#beneficios">Beneficios</a>
@@ -31,60 +31,68 @@
   </div>
 </header>
 
+<!-- Botón WYSIWYG -->
+<button id="editToggle" class="edit-fab" title="Editar textos">🖊️</button>
+<div id="editBar" class="edit-bar" hidden>
+  <span>Modo edición activo</span>
+  <button id="saveEdits" class="btn small">Guardar</button>
+  <button id="cancelEdits" class="btn ghost small">Cancelar</button>
+</div>
+
 <main>
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <h1>Principios bíblicos <span class="grad">para prosperar</span> en tu hogar, negocio y ministerio</h1>
-        <p class="lead">No es solo dinero. Es propósito, sabiduría y paz en cada decisión. Aprende a alinear tu vida con los principios del Reino para ver fruto real.</p>
+        <h1 data-editable>Principios bíblicos <span class="grad">para prosperar</span> en tu hogar, negocio y ministerio</h1>
+        <p class="lead" data-editable>No es solo dinero. Es propósito, sabiduría y paz en cada decisión. Aprende a alinear tu vida con los principios del Reino para ver fruto real.</p>
         <div class="cta-row">
           <a class="btn cta" href="talleres.html">Descubre el Taller</a>
           <a class="btn ghost" href="#oferta">Ver contenidos</a>
         </div>
-        <p class="cta-sub">Regístrate y asegura tu lugar en la próxima sesión</p>
+        <p class="cta-sub" data-editable>Regístrate y asegura tu lugar en la próxima sesión</p>
         <ul class="trust">
-          <li>✓ Enfoque bíblico y práctico</li>
-          <li>✓ En vivo y bajo demanda</li>
-          <li>✓ Para parejas, emprendedores y ministerios</li>
+          <li data-editable>✓ Enfoque bíblico y práctico</li>
+          <li data-editable>✓ En vivo y bajo demanda</li>
+          <li data-editable>✓ Para parejas, emprendedores y ministerios</li>
         </ul>
       </div>
       <div class="hero-card card">
-        <p class="verse">“Acuérdate de Jehová tu Dios, porque Él te da el poder para hacer las riquezas...” — <strong>Deuteronomio 8:18</strong></p>
-        <p class="verse">“Si alguno tiene falta de sabiduría, pídala a Dios...” — <strong>Santiago 1:5</strong></p>
-        <p class="verse">“Mi Dios suplirá todo lo que os falta...” — <strong>Filipenses 4:19</strong></p>
+        <p class="verse" data-editable>“Acuérdate de Jehová tu Dios, porque Él te da el poder para hacer las riquezas...” — <strong>Deuteronomio 8:18</strong></p>
+        <p class="verse" data-editable>“Si alguno tiene falta de sabiduría, pídala a Dios...” — <strong>Santiago 1:5</strong></p>
+        <p class="verse" data-editable>“Mi Dios suplirá todo lo que os falta...” — <strong>Filipenses 4:19</strong></p>
       </div>
     </div>
   </section>
 
   <section id="oferta" class="section">
     <div class="wrap">
-      <h2>¿Qué encontrarás aquí?</h2>
+      <h2 data-editable>¿Qué encontrarás aquí?</h2>
       <div class="grid3">
         <article class="card">
-          <h3>Clases</h3>
-          <p>Sesiones concretas para aplicar principios bíblicos en finanzas personales, liderazgo y familia.</p>
+          <h3 data-editable>Clases</h3>
+          <p data-editable>Sesiones concretas para aplicar principios bíblicos en finanzas personales, liderazgo y familia.</p>
           <ul class="bullets">
-            <li>Fundamentos del Reino</li>
-            <li>Gestión y presupuesto</li>
-            <li>Identidad y propósito</li>
+            <li data-editable>Fundamentos del Reino</li>
+            <li data-editable>Gestión y presupuesto</li>
+            <li data-editable>Identidad y propósito</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Talleres</h3>
-          <p>Formatos prácticos con ejercicios, herramientas (Regla del 72) y hojas de trabajo.</p>
+          <h3 data-editable>Talleres</h3>
+          <p data-editable>Formatos prácticos con ejercicios, herramientas (Regla del 72) y hojas de trabajo.</p>
           <ul class="bullets">
-            <li>Plan financiero familiar</li>
-            <li>Salir de deudas con estrategia</li>
-            <li>Crear margen para invertir</li>
+            <li data-editable>Plan financiero familiar</li>
+            <li data-editable>Salir de deudas con estrategia</li>
+            <li data-editable>Crear margen para invertir</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Conferencias & Predicaciones</h3>
-          <p>Mensajes que activan fe, visión y generosidad para avanzar el Reino en todas las áreas.</p>
+          <h3 data-editable>Conferencias & Predicaciones</h3>
+          <p data-editable>Mensajes que activan fe, visión y generosidad para avanzar el Reino en todas las áreas.</p>
           <ul class="bullets">
-            <li>Economía del Cielo</li>
-            <li>Abundancia con propósito</li>
-            <li>La sabiduría que prospera</li>
+            <li data-editable>Economía del Cielo</li>
+            <li data-editable>Abundancia con propósito</li>
+            <li data-editable>La sabiduría que prospera</li>
           </ul>
         </article>
       </div>
@@ -93,25 +101,25 @@
 
   <section id="beneficios" class="section alt">
     <div class="wrap">
-      <h2>Beneficios que experimentarás</h2>
-      <div class="grid3">
+      <h2 data-editable>Beneficios que experimentarás</h2>
+      <div class="benefits-grid-3x2">
         <div class="benefit">
-          <div class="icon">💡</div><h4>Claridad & Sabiduría</h4><p>Toma decisiones con paz, basadas en principios eternos.</p>
+          <div class="icon">💡</div><h4 data-editable>Claridad & Sabiduría</h4><p data-editable>Toma decisiones con paz, basadas en principios eternos.</p>
         </div>
         <div class="benefit">
-          <div class="icon">👪</div><h4>Unidad en casa</h4><p>Conversaciones sanas y acuerdos prácticos sobre dinero.</p>
+          <div class="icon">👪</div><h4 data-editable>Unidad en casa</h4><p data-editable>Conversaciones sanas y acuerdos prácticos sobre dinero.</p>
         </div>
         <div class="benefit">
-          <div class="icon">📈</div><h4>Crecimiento sostenible</h4><p>Hábitos y sistemas que crean margen y multiplican.</p>
+          <div class="icon">📈</div><h4 data-editable>Crecimiento sostenible</h4><p data-editable>Hábitos y sistemas que crean margen y multiplican.</p>
         </div>
         <div class="benefit">
-          <div class="icon">🤝</div><h4>Negocios con propósito</h4><p>Emprender con integridad, excelencia y visión mayor.</p>
+          <div class="icon">🤝</div><h4 data-editable>Negocios con propósito</h4><p data-editable>Emprender con integridad, excelencia y visión mayor.</p>
         </div>
         <div class="benefit">
-          <div class="icon">🙏</div><h4>Ministerio fortalecido</h4><p>Recursos para servir mejor, dar más y liderar con ejemplo.</p>
+          <div class="icon">🙏</div><h4 data-editable>Ministerio fortalecido</h4><p data-editable>Recursos para servir mejor, dar más y liderar con ejemplo.</p>
         </div>
         <div class="benefit">
-          <div class="icon">🎯</div><h4>Plan & Acción</h4><p>Hoja de ruta: presupuesto, ahorro, inversión y generosidad.</p>
+          <div class="icon">🎯</div><h4 data-editable>Plan & Acción</h4><p data-editable>Hoja de ruta: presupuesto, ahorro, inversión y generosidad.</p>
         </div>
       </div>
     </div>
@@ -119,33 +127,36 @@
 
   <section id="testimonios" class="section">
     <div class="wrap">
-      <h2>Historias reales</h2>
+      <h2 data-editable>Historias reales</h2>
       <div class="testis">
-        <blockquote class="card">“Salimos de deudas en 7 meses y hoy invertimos con paz. Lo que más cambió fue nuestra visión.” <br><span>— J & M, Dallas</span></blockquote>
-        <blockquote class="card">“Aprendimos a decidir en unidad. La generosidad dejó de ser presión y se volvió alegría.” <br><span>— R & A, Fort Worth</span></blockquote>
-        <blockquote class="card">“Aplicar la Regla del 72 nos abrió los ojos. Ahora el interés trabaja a nuestro favor.” <br><span>— P & L, Houston</span></blockquote>
+        <blockquote class="card" data-editable>“Salimos de deudas en 7 meses y hoy invertimos con paz. Lo que más cambió fue nuestra visión.” <br><span>— J & M, Dallas</span></blockquote>
+        <blockquote class="card" data-editable>“Aprendimos a decidir en unidad. La generosidad dejó de ser presión y se volvió alegría.” <br><span>— R & A, Fort Worth</span></blockquote>
+        <blockquote class="card" data-editable>“Aplicar la Regla del 72 nos abrió los ojos. Ahora el interés trabaja a nuestro favor.” <br><span>— P & L, Houston</span></blockquote>
       </div>
     </div>
   </section>
 
   <section id="agenda" class="section alt">
     <div class="wrap">
-      <h2>Próximas fechas y formatos</h2>
+      <h2 data-editable>Próximas fechas y formatos</h2>
       <div class="grid3">
         <div class="card">
-          <h3>Masterclass en vivo</h3>
-          <p>Sesión gratuita de 60 minutos: Fundamentos del Reino & pasos prácticos.</p>
-          <p class="muted">Miércoles 7:00 PM (CST) · Online</p>
+          <h3 data-editable>Masterclass en vivo</h3>
+          <p data-editable>Sesión enfocada en Fundamentos del Reino & pasos prácticos.</p>
+          <p class="muted" data-editable><strong>Añádete a la Lista de espera</strong></p>
+          <a class="btn small" href="lista-espera.html">Unirme a la lista</a>
         </div>
         <div class="card">
-          <h3>Taller para parejas</h3>
-          <p>90 minutos con ejercicios guiados y plan familiar.</p>
-          <p class="muted">Sábados · Presencial / Online</p>
+          <h3 data-editable>Taller para parejas</h3>
+          <p data-editable>Con ejercicios guiados y plan familiar.</p>
+          <p class="muted" data-editable><strong>Añádete a la Lista de espera</strong></p>
+          <a class="btn small" href="lista-espera.html">Unirme a la lista</a>
         </div>
         <div class="card">
-          <h3>Conferencia iglesias</h3>
-          <p>Mensaje + ministerio · Identidad y economía del Cielo.</p>
-          <p class="muted">Agenda abierta · In situ</p>
+          <h3 data-editable>Conferencia iglesias</h3>
+          <p data-editable>Mensaje + ministerio · Identidad y economía del Cielo.</p>
+          <p class="muted" data-editable><strong>Añádete a la Lista de espera</strong></p>
+          <a class="btn small" href="lista-espera.html">Unirme a la lista</a>
         </div>
       </div>
     </div>
@@ -153,26 +164,27 @@
 
   <section id="cta" class="section focus">
     <div class="wrap">
-      <h2 class="cta-q">
+      <h2 class="cta-q" data-editable>
         Si en tu matrimonio pudieras descubrir principios bíblicos que transformen tus finanzas
         y los lleven de la escasez a la abundancia… ¿te gustaría ser parte de nuestro próximo taller?
       </h2>
       <div class="row">
         <a class="btn cta" href="lista-espera.html">Sí, quiero estar en la lista de espera</a>
       </div>
-      <p class="micro muted">Al inscribirte recibirás las fechas, el temario y recursos de preparación.</p>
+      <p class="micro muted" data-editable>Al inscribirte recibirás las fechas, el temario y recursos de preparación.</p>
     </div>
   </section>
 </main>
 
 <footer class="footer">
   <div class="wrap">
-    <small>© 2025 libresparaprosperar.com — Hecho con propósito • 
+    <small data-editable>© 2025 libresparaprosperar.com — Hecho con propósito • 
       <a href="talleres.html">Talleres</a> • 
       <a href="privacidad.html">Política de privacidad</a></small>
   </div>
 </footer>
 
 <script src="script.js"></script>
+<script src="wysiwyg.js"></script>
 </body>
 </html>

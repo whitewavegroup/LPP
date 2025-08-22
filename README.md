@@ -1,14 +1,12 @@
-# LibresParaProsperar — Repo listo
-Incluye landing original (index.html), lista de espera (PipelinePro), talleres y taller completo.
+# LibresParaProsperar — FIX + WYSIWYG
+- Beneficios en 2 filas x 3 columnas (desktop), responsive a 2 y 1 columna.
+- Agenda sin fechas: reemplazado por “Añádete a la Lista de espera” con botones.
+- WYSIWYG básico: botón 🖊️ permite editar textos con data-editable y guardar en localStorage.
 
-## Rutas
-- /index.html — Landing
-- /lista-espera.html — Form Lista de Espera (PipelinePro HkKK9MwaPAwqPRE7s1G1)
-- /talleres.html — Resumen y CTA al acceso
-- /taller-acceso.html — Form Acceso (PipelinePro Hv49mCWtpSgYqiam4Jwy) → redirigir a /taller-completo.html
-- /taller-completo.html — Taller interactivo
-- /privacidad.html — Política
+## Edición inline
+- Botón flotante “🖊️” → activa modo edición.
+- Haz cambios y pulsa **Guardar** (se guardan en este navegador).
+- Para revertir en un dispositivo, borra `localStorage` (clave: `lpp_inline_edits_v1`).
 
-## Notas
-- Asegura la redirección post-submit en PipelinePro (acceso) a /taller-completo.html
-- Limpia caché del navegador tras subir (Cmd+Shift+R / Ctrl+F5)
+## Flujo
+- Landing → Lista de Espera (PipelinePro) / Talleres → Acceso → Taller Completo.
